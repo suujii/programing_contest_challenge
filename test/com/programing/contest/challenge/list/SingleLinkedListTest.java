@@ -20,6 +20,7 @@ public class SingleLinkedListTest {
 		s.insertRear(3);
 		s.insertRear(4);
 		s.insertMiddle(2, 5);
+		s.insertMiddle(3, 6);
 		s.deleteFront();
 		s.deleteRear();
 		s.deleteMiddle(2);
