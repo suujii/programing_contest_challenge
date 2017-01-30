@@ -30,9 +30,8 @@ public class PalindromeUseStack {
 		}
 
 		for (int index = xIndex + 1; index < word.length(); index++) {
-			Character data = word.charAt(index);
 
-			if (data == stack.top()) {
+			if (word.charAt(index) == stack.top()) {
 				stack.pop();
 			} else {
 				return false;
