@@ -35,7 +35,7 @@ public class MyQueueUsedStack {
 		return popStack.pop();
 	}
 
-	public void reverse() {
+	private void reverse() {
 		popStack.push(pushStack.pop());
 	}
 
@@ -45,6 +45,6 @@ public class MyQueueUsedStack {
 		for (int i = 0; i < size; i++) {
 			System.out.print(popStack.pop() + " ");
 		}
-		System.out.print("\n");
+		System.out.println();
 	}
 }
