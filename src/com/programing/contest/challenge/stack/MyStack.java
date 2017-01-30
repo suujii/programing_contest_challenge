@@ -49,6 +49,10 @@ public class MyStack<T> {
 		return stack.get(stack.size() - 1);
 	}
 
+	public int size() {
+		return stack.size();
+	}
+
 	public void print() {
 		for (T data : stack) {
 			System.out.print(data + " ");
