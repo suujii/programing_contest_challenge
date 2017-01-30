@@ -4,7 +4,7 @@
  */
 package com.programing.contest.challenge.recursive;
 
-import java.util.List;
+import static org.junit.Assert.*;
 
 import org.junit.Test;
 
@@ -17,23 +17,19 @@ public class TwoNumberTest {
 	@Test
 	public void test() {
 		TwoNumber t = new TwoNumber();
-		List<Integer> resultList = t.twoNumber(8);
-
-		for (int i = resultList.size() - 1; i >= 0; i--) {
-			System.out.print(resultList.get(i));
-		}
-		System.out.println();
+		assertEquals("1000", t.twoNumber(8));
 	}
 
 	@Test
 	public void test2() {
 		TwoNumber t = new TwoNumber();
-		List<Integer> resultList = t.twoNumber(5);
+		assertEquals("101", t.twoNumber(5));
+	}
 
-		for (int i = resultList.size() - 1; i >= 0; i--) {
-			System.out.print(resultList.get(i));
-		}
-		System.out.println();
+	@Test
+	public void test3() {
+		TwoNumber t = new TwoNumber();
+		assertEquals("100", t.twoNumber(4));
 	}
 
 }

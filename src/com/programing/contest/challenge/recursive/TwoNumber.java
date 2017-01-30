@@ -4,23 +4,20 @@
  */
 package com.programing.contest.challenge.recursive;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * @author SuJi, Lee
  *
  */
 public class TwoNumber {
-	private List<Integer> list = new ArrayList<Integer>();
+	private StringBuffer sb = new StringBuffer();
 
-	public List<Integer> twoNumber(int n) {
-		if (n <= 1) {
-			list.add(n % 2);
-			return list;
+	public String twoNumber(int n) {
+		sb.append(n % 2);
+
+		if (n == 1) {
+			return sb.reverse().toString();
 		}
 
-		list.add(n % 2);
 		return twoNumber(n / 2);
 	}
 }
