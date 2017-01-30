@@ -10,10 +10,8 @@ package com.programing.contest.challenge.recursive;
  */
 public class NpowerOfM {
 	public int nPowerOfM(int n, int m) {
-		int data = 1;
-
 		if (m == 0) {
-			return data;
+			return 1;
 		}
 		return n * nPowerOfM(n, m - 1);
 	}

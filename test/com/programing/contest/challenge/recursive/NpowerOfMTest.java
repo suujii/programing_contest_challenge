@@ -4,6 +4,8 @@
  */
 package com.programing.contest.challenge.recursive;
 
+import static org.junit.Assert.*;
+
 import org.junit.Test;
 
 /**
@@ -15,9 +17,11 @@ public class NpowerOfMTest {
 	@Test
 	public void test() {
 		NpowerOfM m = new NpowerOfM();
-		System.out.println(m.nPowerOfM(3, 2));
-		System.out.println(m.nPowerOfM(4, 3));
-		System.out.println(m.nPowerOfM(2, 10));
+		assertEquals(9, m.nPowerOfM(3, 2));
+		assertEquals(64, m.nPowerOfM(4, 3));
+		assertEquals(1024, m.nPowerOfM(2, 10));
+		assertEquals(1, m.nPowerOfM(2, 0));
+		assertEquals(2, m.nPowerOfM(2, 1));
 	}
 
 }
