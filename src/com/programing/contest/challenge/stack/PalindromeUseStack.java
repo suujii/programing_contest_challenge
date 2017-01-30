@@ -15,7 +15,7 @@ public class PalindromeUseStack {
 
 	public PalindromeUseStack(String word) {
 		this.word = word;
-		this.stack = new MyStack<>(word.length());
+		this.stack = new MyStack<>(word.length() / 2);
 	}
 
 	public boolean isPalindrome() {
