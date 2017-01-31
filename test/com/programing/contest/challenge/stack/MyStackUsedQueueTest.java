@@ -52,4 +52,15 @@ public class MyStackUsedQueueTest {
 		s2.pop();
 		s2.print(); // 1~2
 	}
+
+	@Test
+	public void test3() {
+		MyStackUsedQueue s2 = new MyStackUsedQueue(STACK_SIZE);
+		s2.push(1);
+		s2.push(2);
+		s2.push(3);
+		s2.pop();
+		s2.push(4);
+		s2.print(); // 1~2, 4
+	}
 }
