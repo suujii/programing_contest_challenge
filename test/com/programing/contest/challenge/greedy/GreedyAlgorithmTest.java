@@ -12,21 +12,28 @@ import org.junit.Test;
  */
 public class GreedyAlgorithmTest {
 	@Test(expected = IllegalArgumentException.class)
-	public void testWhenError() {
-		String input = "c1=3 c5=2, c10=1, c50=3, c100=0, c500=2, A=620";
+	public void testWhenError1() {
+		String input = "";
 		GreedyAlgorithm g = new GreedyAlgorithm(input);
 		g.printCoinCount();
 	}
 
 	@Test(expected = IllegalArgumentException.class)
 	public void testWhenError2() {
-		String input = "c1=3, c5=2, c10=1, c50=3, c100=0, A=620";
+		String input = "c1=3 c5=2, c10=1, c50=3, c100=0, c500=2, A=620";
 		GreedyAlgorithm g = new GreedyAlgorithm(input);
 		g.printCoinCount();
 	}
 
 	@Test(expected = IllegalArgumentException.class)
 	public void testWhenError3() {
+		String input = "c1=3, c5=2, c10=1, c50=3, c100=0, A=620";
+		GreedyAlgorithm g = new GreedyAlgorithm(input);
+		g.printCoinCount();
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void testWhenError4() {
 		String input = "c13, c5=2, c10=1, c50=3, c100=0, c500=2, A=620";
 		GreedyAlgorithm g = new GreedyAlgorithm(input);
 		g.printCoinCount();
