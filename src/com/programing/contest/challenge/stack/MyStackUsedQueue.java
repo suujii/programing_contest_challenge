@@ -23,7 +23,7 @@ public class MyStackUsedQueue {
 		if (queue2.isEmpty()) {
 			queue1.enqueue(data);
 		} else {
-			queue1.enqueue(data);
+			queue2.enqueue(data);
 		}
 	}
 
