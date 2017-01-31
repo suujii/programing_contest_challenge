@@ -4,8 +4,8 @@
  */
 package com.programing.contest.challenge.greedy;
 
-import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 /**
  * @author SuJi, Lee
@@ -19,7 +19,7 @@ public class GreedyAlgorithm {
 
 	public GreedyAlgorithm(String input) {
 		this.coins = new Coin[COIN_COUNT];
-		this.result = new HashMap<>();
+		this.result = new TreeMap<>();
 		init(input); // token 분리, 유효성 검사
 	}
 
