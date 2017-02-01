@@ -1,6 +1,7 @@
 /**
- * Copyright 2017 Naver Corp. All rights Reserved.
- * Naver PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+ * 이진수 구하기
+ * ex ) 5 = 101
+ *      8 = 1000
  */
 package com.programing.contest.challenge.recursive;
 

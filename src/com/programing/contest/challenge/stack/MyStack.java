@@ -1,3 +1,6 @@
+/**
+ * 리스트를 이용한 stack 만들기
+ */
 package com.programing.contest.challenge.stack;
 
 import java.util.ArrayList;

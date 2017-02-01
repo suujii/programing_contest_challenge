@@ -1,6 +1,8 @@
 /**
- * Copyright 2017 Naver Corp. All rights Reserved.
- * Naver PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+ * 승 계산하기
+ * ex ) 2^3 = 8
+ *      2^10 = 1024
+ *      3^2 = 9
  */
 package com.programing.contest.challenge.recursive;
 

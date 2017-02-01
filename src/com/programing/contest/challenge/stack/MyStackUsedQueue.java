@@ -1,6 +1,5 @@
 /**
- * Copyright 2017 Naver Corp. All rights Reserved.
- * Naver PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+ * 두개의 queue를 이용해 stack을 만드세요.
  */
 package com.programing.contest.challenge.stack;
 

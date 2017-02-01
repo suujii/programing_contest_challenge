@@ -1,3 +1,6 @@
+/**
+ * 두 개의 stack으로 queue 만들기
+ */
 package com.programing.contest.challenge.queue;
 
 import com.programing.contest.challenge.stack.MyStack;

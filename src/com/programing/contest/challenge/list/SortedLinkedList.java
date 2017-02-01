@@ -1,6 +1,5 @@
 /**
- * Copyright 2017 Naver Corp. All rights Reserved.
- * Naver PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+ * 정렬 링크드 리스트 만들기
  */
 package com.programing.contest.challenge.list;
 

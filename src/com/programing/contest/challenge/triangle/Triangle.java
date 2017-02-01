@@ -1,7 +1,22 @@
 /**
- * Copyright 2017 Naver Corp. All rights Reserved.
- * Naver PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- */
+* n개의 봉이 있습니다. 봉의 길이는 ai 입니다. 3개의 봉을 선택해서 가능한 둘레의 길이가 긴 삼각형을 만들려고 합니다.
+* 둘레의 길이의 최대값을 구하세요. (삼각형을 만들 수 없는 경우에는 0을 출력한다)
+*
+* 3<=n<=100
+* 1<=ai<=10^6
+*
+* 입력
+* n = 5
+* a = {2, 3, 4, 5, 10}
+* 
+* n = 4
+* a= {4, 5, 10, 20}
+* 
+* 출력
+* 12(3,4,5를 선택했을 경우)
+* 
+* 0(삼각형 만들 수 없음)
+*/
 package com.programing.contest.challenge.triangle;
 
 import java.util.Arrays;

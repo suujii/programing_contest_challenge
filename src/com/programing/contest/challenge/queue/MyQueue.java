@@ -1,3 +1,6 @@
+/**
+ * 리스트로 queue 만들기
+ */
 package com.programing.contest.challenge.queue;
 
 import java.util.ArrayList;

@@ -20,42 +20,42 @@ public class GreedyAlgorithmTest {
 
 	@Test(expected = IllegalArgumentException.class)
 	public void testWhenError2() {
-		String input = "c1=3 c5=2, c10=1, c50=3, c100=0, c500=2, A=620";
+		String input = "C1=3 C5=2, C10=1, C50=3, C100=0, C500=2, A=620";
 		GreedyAlgorithm g = new GreedyAlgorithm(input);
 		g.printCoinCount();
 	}
 
 	@Test(expected = IllegalArgumentException.class)
 	public void testWhenError3() {
-		String input = "c1=3, c5=2, c10=1, c50=3, c100=0, A=620";
+		String input = "C1=3, C5=2, C10=1, C50=3, C100=0, A=620";
 		GreedyAlgorithm g = new GreedyAlgorithm(input);
 		g.printCoinCount();
 	}
 
 	@Test(expected = IllegalArgumentException.class)
 	public void testWhenError4() {
-		String input = "c13, c5=2, c10=1, c50=3, c100=0, c500=2, A=620";
+		String input = "C13, C5=2, C10=1, C50=3, C100=0, C500=2, A=620";
 		GreedyAlgorithm g = new GreedyAlgorithm(input);
 		g.printCoinCount();
 	}
 
 	@Test
 	public void testSuccess1() {
-		String input = "c1=3, c5=2, c10=1, c50=3, c100=0, c500=2, A=620";
+		String input = "C1=3, C5=2, C10=1, C50=3, C100=0, C500=2, A=620";
 		GreedyAlgorithm g = new GreedyAlgorithm(input);
 		g.printCoinCount();
 	}
 
 	@Test
 	public void testSuccess2() {
-		String input = "c1=3, c5=2, c10=1, c50=3, c100=0, c500=2, A=1000";
+		String input = "C1=3, C5=2, C10=1, C50=3, C100=0, C500=2, A=1000";
 		GreedyAlgorithm g = new GreedyAlgorithm(input);
 		g.printCoinCount();
 	}
 
 	@Test
 	public void testSuccess3() {
-		String input = "c1=3, c5=2, c10=3, c50=3, c100=5, c500=2, A=1540";
+		String input = "C1=3, C5=2, C10=3, C50=3, C100=5, C500=2, A=1540";
 		GreedyAlgorithm g = new GreedyAlgorithm(input);
 		g.printCoinCount();
 	}

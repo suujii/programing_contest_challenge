@@ -1,7 +1,7 @@
 /**
- * Copyright 2017 Naver Corp. All rights Reserved.
- * Naver PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- */
+* 주어진 문자 배열은 a와 b로 이루어져 있다. 이 문자열의 가운데는 특수 문자 X로 표시되어있다.
+* 예를 들면 ababa...ababXbaba...ababa. 이 문자열이 회문인지 여부를 체크하세요.
+*/
 package com.programing.contest.challenge.stack;
 
 /**

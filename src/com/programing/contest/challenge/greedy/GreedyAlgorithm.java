@@ -1,7 +1,16 @@
 /**
- * Copyright 2017 Naver Corp. All rights Reserved.
- * Naver PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- */
+* 1원, 5원, 10원, 50원, 100원, 500원짜리가 각각 C1, C5, C10, C50, C100, C500개 씩 있다. 가능한 적은 수의 동전으로 A원을 
+* 지불하려면 몇개의 동전이 있어야 할까? 지불 방법은 적어도 1개는 존재한다고 가정한다.
+*
+* 0<= C1, C5, C10, C50, C100, C500 <=10^9
+* 0<= A + 6565 <= 10^9
+*
+* 입력
+* C1=3, C5=2, C10=1, C50=3, C100=0, C500=2, A=620
+* 
+* 출력
+* 6 (500원짜리 1개, 50원짜리 2개, 10원짜리 1개, 5원짜리 2개 합계 6개)
+*/
 package com.programing.contest.challenge.greedy;
 
 import java.util.Map;
@@ -38,7 +47,7 @@ public class GreedyAlgorithm {
 			String[] subToken = tokenNize(tokens[i], "=");
 
 			Coin coin = new Coin();
-			coin.setAmount(Integer.parseInt(subToken[0].replace("c", "").trim()));
+			coin.setAmount(Integer.parseInt(subToken[0].replace("C", "").trim()));
 			coin.setCount(Integer.parseInt(subToken[1]));
 			this.coins[i] = coin;
 		}
