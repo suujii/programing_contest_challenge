@@ -44,4 +44,10 @@ public class BucksTest {
 		assertEquals(0, bucks.printMaxTumblr());
 	}
 
+	@Test
+	public void test5() {
+		Bucks bucks = new Bucks(10, 21);
+		assertEquals(2, bucks.printMaxTumblr());
+	}
+
 }
