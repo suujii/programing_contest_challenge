@@ -1,8 +1,9 @@
 /**
  * 이진힙(최소힙, 최대힙)
+ * 임의의 요소 삭제하기
+ * i번째 요소 삭제하기
  */
 package com.programing.contest.challenge.heap;
-
 
 /**
  * @author SuJi, Lee
