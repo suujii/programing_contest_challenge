@@ -26,7 +26,7 @@ public class Bucks {
 		return divide1 - divide2 >= 0 ? divide1 - divide2 : 0;
 	}
 
-	//방법2
+	//	방법2
 	//	public int printMaxTumblr() {
 	//		return Math.min(summberCnt / 5, (summberCnt + generalCnt) / 12);
 	//	}
