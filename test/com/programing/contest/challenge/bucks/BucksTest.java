@@ -16,7 +16,7 @@ public class BucksTest {
 
 	@Test
 	public void test() {
-		Bucks bucks = new Bucks(12, 4);
+		Bucks bucks = new Bucks(12, 0);
 		assertEquals(1, bucks.printMaxTumblr());
 	}
 
@@ -50,4 +50,33 @@ public class BucksTest {
 		assertEquals(2, bucks.printMaxTumblr());
 	}
 
+	@Test
+	public void test6() {
+		Bucks bucks = new Bucks(5, 0);
+		assertEquals(0, bucks.printMaxTumblr());
+	}
+
+	@Test
+	public void test7() {
+		Bucks bucks = new Bucks(7, 1);
+		assertEquals(0, bucks.printMaxTumblr());
+	}
+
+	@Test
+	public void test8() {
+		Bucks bucks = new Bucks(10, 0);
+		assertEquals(0, bucks.printMaxTumblr());
+	}
+
+	@Test
+	public void test9() {
+		Bucks bucks = new Bucks(10, 5);
+		assertEquals(1, bucks.printMaxTumblr());
+	}
+
+	@Test
+	public void test10() {
+		Bucks bucks = new Bucks(24, 0);
+		assertEquals(2, bucks.printMaxTumblr());
+	}
 }
