@@ -1,7 +1,3 @@
-/**
- * Copyright 2017 Naver Corp. All rights Reserved.
- * Naver PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- */
 package com.programing.contest.challenge.recursive;
 
 import org.junit.Test;
@@ -15,6 +11,12 @@ public class HanoiTest {
 	@Test
 	public void test() {
 		Hanoi hanoi = new Hanoi(3);
+		hanoi.executeHanoi();
+	}
+
+	@Test
+	public void test2() {
+		Hanoi hanoi = new Hanoi(4);
 		hanoi.executeHanoi();
 	}
 
