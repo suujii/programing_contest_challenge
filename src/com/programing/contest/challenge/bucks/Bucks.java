@@ -20,14 +20,6 @@ public class Bucks {
 	}
 
 	public int printMaxTumblr() {
-		int divide1 = summberCnt / 5;
-		int divide2 = generalCnt - (divide1 * 7) >= 0 ? 0 : 1;
-
-		return divide1 - divide2 >= 0 ? divide1 - divide2 : 0;
+		return Math.min(summberCnt / 5, (summberCnt + generalCnt) / 12);
 	}
-
-	//	방법2
-	//	public int printMaxTumblr() {
-	//		return Math.min(summberCnt / 5, (summberCnt + generalCnt) / 12);
-	//	}
 }
