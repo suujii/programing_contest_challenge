@@ -7,6 +7,9 @@
 */
 package com.programing.contest.challenge.sort;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author SuJi, Lee
  *
@@ -51,6 +54,30 @@ public class QuickSort {
 		}
 
 		return left;
+	}
+
+	public List<Integer> quickSort(List<Integer> list) {
+		if (list.size() < 2) {
+			return list;
+		}
+
+		Integer pivot = list.get(0);
+		List<Integer> lower = new ArrayList<Integer>();
+		List<Integer> higher = new ArrayList<Integer>();
+
+		for (int i = 1; i < list.size(); i++) {
+			if (pivot > list.get(i)) {
+				lower.add(list.get(i));
+			} else {
+				higher.add(list.get(i));
+			}
+		}
+
+		List<Integer> result = quickSort(lower);
+		result.add(pivot);
+		result.addAll(higher);
+
+		return result;
 	}
 
 	public void print() {

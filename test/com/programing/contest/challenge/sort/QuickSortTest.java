@@ -1,5 +1,8 @@
 package com.programing.contest.challenge.sort;
 
+import java.util.Arrays;
+import java.util.List;
+
 import org.junit.Test;
 
 /**
@@ -23,5 +26,9 @@ public class QuickSortTest {
 		QuickSort s = new QuickSort(data, n);
 		s.sort();
 		s.print();
+
+		Integer[] datas = {5, 4, 3, 2, 1};
+		List<Integer> list = Arrays.asList(datas);
+		s.quickSort(list).stream().forEach(item -> System.out.print(item + " "));
 	}
 }
