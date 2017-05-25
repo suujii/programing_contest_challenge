@@ -46,14 +46,30 @@ public class Prisoner {
 		}
 
 		int cnt = 0;
-		for (Boolean data : list) {
-			if (data) {
+		for (int i = 0; i < list.size(); i++) {
+			if (list.get(i)) {
+				System.out.println(i + 1 + "번째 죄수 탈출");
 				cnt++;
 			}
 		}
 		return cnt;
 	}
 
+	/**TODO : 제곱수 풀이???...
+	 * 1번째 o o o o o o o o o o.... o
+	   2번째 o x o x o x o x o x.....x
+	   3번째 o x x x o o o x x x.....o
+	   4번째 o x x o o o o o x x.....x
+	   5번째 o x x x o x o o x o.....o
+	   6번째 o x x x o o o o x o.....x
+	   ... 
+	   118번재 열려있으면
+	   119번째 닫혀있으면되
+	   120번째 
+
+	 * 
+	 * 
+	 */
 	public int getCount() {
 		return count;
 	}
