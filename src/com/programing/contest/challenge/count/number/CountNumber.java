@@ -24,26 +24,27 @@ public class CountNumber {
 		Map<Integer, Integer> map = new HashMap<Integer, Integer>();
 
 		for (int i = n; i <= m; i++) {
-			division(map, i);
-			remainder(map, i);
+			if (i < 10) {
+				divide(map, i);
+			} else {
+				int temp = i;
+				while (temp >= 10) {
+					if (temp / 10 < 10) {
+						divide(map, temp / 10);
+					}
+					divide(map, temp % 10);
+					temp /= 10;
+				}
+			}
 		}
 		return map;
 	}
 
-	private void remainder(Map<Integer, Integer> map, int i) {
-		if (map.containsKey(i % 10)) {
-			map.put(i % 10, map.get(i % 10) + 1);
+	private void divide(Map<Integer, Integer> map, int i) {
+		if (map.containsKey(i)) {
+			map.put(i, map.get(i) + 1);
 		} else {
-			map.put(i % 10, 1);
+			map.put(i, 1);
 		}
 	}
-
-	private void division(Map<Integer, Integer> map, int i) {
-		if (map.containsKey(i / 10)) {
-			map.put(i / 10, map.get(i / 10) + 1);
-		} else {
-			map.put(i / 10, 1);
-		}
-	}
-
 }
