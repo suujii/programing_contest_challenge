@@ -55,21 +55,41 @@ public class Prisoner {
 		return cnt;
 	}
 
-	/**TODO : 제곱수 풀이???...
+	/**방법2 : 제곱수 풀이
 	 * 1번째 o o o o o o o o o o.... o
 	   2번째 o x o x o x o x o x.....x
 	   3번째 o x x x o o o x x x.....o
 	   4번째 o x x o o o o o x x.....x
-	   5번째 o x x x o x o o x o.....o
-	   6번째 o x x x o o o o x o.....x
+	   5번째 o x x o x o o o x o.....o
+	   6번째 o x x o x x o o x o.....x
 	   ... 
 	   118번재 열려있으면
 	   119번째 닫혀있으면되
-	   120번째 
-
-	 * 
+	   120  o x x o x x x x o x.... 
+	   최초 닫힘. 따라서 홀수번 여닫으면 최종은 열린 상태
+	   a * b = 1 -> 1
+	   a * b = 2 -> 1, 2
+	 * a * b = 3 -> 1, 3
+	 * a * b = 4 -> 1, 2, 4
+	 * a * b = 5 -> 1, 5
+	 * ...  
+	 * 즉 약수의 개수가 홀수 일때 최종은 열림.
+	 * 1과 자기자신을 제외한 약수가 제곱일 경우 결국 홀수개 
+	 * 1 , 4, 9, 16, 25, 36, 47, 64, 81, 100 -> 총 10개
 	 * 
 	 */
+	public int releasePrsonerCnt2() {
+		int cnt = 0;
+		for (int i = 1; i <= count; i++) {
+			if (i * i <= count) {
+				System.out.println(i * i + "번째 죄수 탈출");
+				cnt++;
+			}
+		}
+
+		return cnt;
+	}
+
 	public int getCount() {
 		return count;
 	}

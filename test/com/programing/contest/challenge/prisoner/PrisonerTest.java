@@ -1,7 +1,3 @@
-/**
- * Copyright 2017 Naver Corp. All rights Reserved.
- * Naver PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- */
 package com.programing.contest.challenge.prisoner;
 
 import org.junit.Test;
@@ -16,6 +12,12 @@ public class PrisonerTest {
 	public void test() {
 		Prisoner p = new Prisoner(120);
 		System.out.println(p.releasePrsonerCnt());
+	}
+
+	@Test
+	public void test2() {
+		Prisoner p = new Prisoner(120);
+		System.out.println(p.releasePrsonerCnt2());
 	}
 
 }
