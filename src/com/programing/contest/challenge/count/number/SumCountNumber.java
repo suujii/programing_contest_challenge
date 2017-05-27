@@ -14,8 +14,8 @@
  */
 package com.programing.contest.challenge.count.number;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author SuJi, Lee
@@ -23,15 +23,28 @@ import java.util.Set;
  */
 public class SumCountNumber {
 	public void sumCountNumber(int n, int m) {
-		Set<Integer> set = new HashSet<Integer>();
+		List<Integer> list = new ArrayList<Integer>();
 
 		for (int i = n; i <= m; i++) {
-			set.add((i / 10) * (i % 10));
+			if (i < 10) {
+				list.add(i);
+			} else {
+				int multi = 1;
+				int temp = i;
+				while (temp >= 10) {
+					if (temp / 10 < 10) {
+						multi *= temp / 10;
+					}
+					multi *= temp % 10;
+					temp /= 10;
+				}
+				list.add(multi);
+			}
 		}
 
 		int sum = 0;
 
-		for (Integer data : set) {
+		for (Integer data : list) {
 			System.out.println(data);
 			sum += data;
 		}
