@@ -29,15 +29,14 @@ public class SumCountNumber {
 			if (i < 10) {
 				list.add(i);
 			} else {
-				int multi = 1;
 				int temp = i;
-				while (temp >= 10) {
-					if (temp / 10 < 10) {
-						multi *= temp / 10;
-					}
-					multi *= temp % 10;
+				int multi = temp % 10;
+
+				while (temp / 10 >= 10) {
 					temp /= 10;
+					multi *= temp % 10;
 				}
+				multi *= temp / 10;
 				list.add(multi);
 			}
 		}

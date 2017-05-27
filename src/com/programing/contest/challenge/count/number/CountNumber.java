@@ -28,13 +28,13 @@ public class CountNumber {
 				divide(map, i);
 			} else {
 				int temp = i;
-				while (temp >= 10) {
-					if (temp / 10 < 10) {
-						divide(map, temp / 10);
-					}
-					divide(map, temp % 10);
+				divide(map, temp % 10);
+
+				while (temp / 10 >= 10) {
 					temp /= 10;
+					divide(map, temp % 10);
 				}
+				divide(map, temp / 10);
 			}
 		}
 		return map;
