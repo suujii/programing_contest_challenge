@@ -7,6 +7,11 @@
 •8진수로 변환 : 233 --> 351(8)
 •16진수로 변환 : 233 --> E9(16)
   16진수 규칙. 10~15 A-F로 표기, 나머지 그대로
+  
+  라이브러리
+  Integer.toBinaryString(int);
+  Integer.toOctalString(int);
+  Integer.toHexString(int);
  */
 package com.programing.contest.challenge.decimal;
 
