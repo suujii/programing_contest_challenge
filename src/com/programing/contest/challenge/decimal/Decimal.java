@@ -18,7 +18,7 @@ package com.programing.contest.challenge.decimal;
 import java.util.Stack;
 
 public class Decimal {
-	private static final char[] chars = {'A', 'B', 'C', 'D', 'E', 'F'};
+	private static final char[] chars = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W'};
 
 	//자료구조 x
 	public String getDecimal(int data, int n) {
@@ -86,6 +86,4 @@ public class Decimal {
 
 		return getDecimal3(data / n, n);
 	}
-
-	//TODO : 32진수?
 }

@@ -67,31 +67,49 @@ public class DecimalTest {
 	@Test
 	public void testGetDecimal10() {
 		Decimal d = new Decimal();
-		System.out.println(d.getDecimal2(4, 2));
+		System.out.println(d.getDecimal3(4, 2));
 	}
 
 	@Test
 	public void testGetDecimal11() {
 		Decimal d = new Decimal();
-		System.out.println(d.getDecimal2(233, 2));
+		System.out.println(d.getDecimal3(233, 2));
 	}
 
 	@Test
 	public void testGetDecimal12() {
 		Decimal d = new Decimal();
-		System.out.println(d.getDecimal2(233, 8));
+		System.out.println(d.getDecimal3(233, 8));
 	}
 
 	@Test
 	public void testGetDecimal13() {
 		Decimal d = new Decimal();
-		System.out.println(d.getDecimal2(233, 16));
+		System.out.println(d.getDecimal3(233, 16));
 	}
 
 	@Test
 	public void testGetDecimal14() {
 		Decimal d = new Decimal();
-		System.out.println(d.getDecimal2(233, 13));
+		System.out.println(d.getDecimal3(233, 13));
+	}
+
+	@Test
+	public void testGetDecimal16() {
+		Decimal d = new Decimal();
+		System.out.println(d.getDecimal(1000, 32));
+	}
+
+	@Test
+	public void testGetDecimal17() {
+		Decimal d = new Decimal();
+		System.out.println(d.getDecimal2(1000, 32));
+	}
+
+	@Test
+	public void testGetDecimal18() {
+		Decimal d = new Decimal();
+		System.out.println(d.getDecimal3(1000, 32));
 	}
 
 }
