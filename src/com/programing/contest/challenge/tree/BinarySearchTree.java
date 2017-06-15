@@ -146,10 +146,10 @@ public class BinarySearchTree {
 			}
 
 			if (maxLeftNode != null) { //왼쪽 자식이 존재하는 경우
-			//				current.data = maxLeftNode.data;
-			//				maxLeftNode.right = current.right;
-			//				current.left = maxLeftNode.left;
-			//				current.right = null;
+				//				current.data = maxLeftNode.data;
+				//				maxLeftNode.right = current.right;
+				//				current.left = maxLeftNode.left;
+				//				current.right = null;
 			}
 
 		}
@@ -163,6 +163,29 @@ public class BinarySearchTree {
 			System.out.print(node.data + " ");
 			inOrder(node.right);
 		}
+	}
+
+	public void preOrder(Node node) {
+		if (node != null) {
+			System.out.print(node.data + " ");
+			preOrder(node.left);
+			preOrder(node.right);
+		}
+	}
+
+	public void postOrder(Node node) {
+		if (node != null) {
+			postOrder(node.left);
+			postOrder(node.right);
+			System.out.print(node.data + " ");
+		}
+	}
+
+	public int treeHeight(Node node) {
+		if (node == null) {
+			return 0;
+		}
+		return 1 + Math.max(treeHeight(node.getLeft()), treeHeight(node.getRight()));
 	}
 
 	public Node getRoot() {

@@ -103,6 +103,38 @@ public class SingleLinkedList {
 		}
 	}
 
+	public Node reverseNode() {
+		return reverseNode(head);
+	}
+
+	public Node reverseNode(Node currentNode) {
+		Node previousNode = null;
+		Node nextNode = null;
+
+		while (currentNode != null) {
+			nextNode = currentNode.next;
+
+			currentNode.next = previousNode; // 넥스트값 초기화
+			previousNode = currentNode;//앞에꺼만 띄어오기
+			currentNode = nextNode;
+		}
+
+		return previousNode;
+	}
+
+	public void printFromEnd() {
+		printFromEnd(head);
+	}
+
+	public void printFromEnd(Node head) {
+		if (head == null) {
+			return;
+		}
+		printFromEnd(head.next);
+		System.out.print(head.data);
+
+	}
+
 	public int listCount() {
 		if (head == null) {
 			return 0;

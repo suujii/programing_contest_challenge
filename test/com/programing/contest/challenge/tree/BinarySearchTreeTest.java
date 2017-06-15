@@ -46,4 +46,25 @@ public class BinarySearchTreeTest {
 		t.delete(2); // 자식이 2개 존재하는 경우 삭제
 		t.inOrder(t.getRoot());
 	}
+
+	@Test
+	public void test2() {
+		BinarySearchTree t = new BinarySearchTree();
+		t.insert(6);
+		t.insert(2);
+		t.insert(8);
+		t.insert(1);
+		t.insert(5);
+		System.out.println("---in---");
+		t.inOrder(t.getRoot());
+		System.out.println();
+		System.out.println("---pre---");
+		t.preOrder(t.getRoot());
+		System.out.println();
+		System.out.println("---post---");
+		t.postOrder(t.getRoot());
+		System.out.println();
+		System.out.println("---height---");
+		System.out.println(t.treeHeight(t.getRoot()));
+	}
 }

@@ -111,4 +111,29 @@ public class DynamicProgramingTest {
 		d.printMaxTotalPrice();
 	}
 
+	@Test
+	public void test5() {
+		int count = 3;
+		Product[] products = new Product[count];
+		int totalWeight = 5;
+
+		Product product1 = new Product();
+		product1.setWeight(1);
+		product1.setPrice(1);
+		products[0] = product1;
+
+		Product product2 = new Product();
+		product2.setWeight(4);
+		product2.setPrice(1);
+		products[1] = product2;
+
+		Product product3 = new Product();
+		product3.setWeight(3);
+		product3.setPrice(3);
+		products[2] = product3;
+
+		DynamicPrograming d = new DynamicPrograming(count, products, totalWeight);
+		d.printMaxTotalPrice();
+	}
+
 }

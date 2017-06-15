@@ -112,4 +112,10 @@ public class DecimalTest {
 		System.out.println(d.getDecimal3(1000, 32));
 	}
 
+	@Test
+	public void testGetDecimal19() {
+		Decimal d = new Decimal();
+		System.out.println(d.getDecimal3(3, 3));
+	}
+
 }
