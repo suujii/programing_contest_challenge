@@ -19,8 +19,8 @@ public class SumTime {
 		int sum = 0;
 		for (int i = 0; i < 24; i++) {
 			for (int j = 0; j < 60; j++) {
-				if (j % 3 == 0 || i % 3 == 0) {
-					sum += i * 60 + j;
+				if (i % 10 == 3 || j / 10 == 3 || j % 10 == 3) {
+					sum += 60;
 				}
 			}
 		}
